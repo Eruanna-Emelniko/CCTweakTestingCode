@@ -1,5 +1,6 @@
 CCTweakTestingCode
     Ummm yeah...
 
-    I don't know what to say hear
-    some of this is "Undefinded" like, for example, 'turtle'.
+    this is code I'm using in cctweaked
+
+    turtle is undefinded in here becase it's definded in game
