@@ -19,6 +19,7 @@ end
 
 while turtle.getFuelLevel() > 500 do
 --this is the main digging code
+--BROKEN NEED TO FIX
     digForward()
     turtle.turnRight()
     digForward()
