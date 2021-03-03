@@ -19,7 +19,6 @@ end
 
 while turtle.getFuelLevel() > 500 do
 --this is the main digging code
---BROKEN NEED TO FIX
     digForward()
     turtle.turnRight()
     digForward()
@@ -48,7 +47,7 @@ while turtle.getFuelLevel() > 500 do
     didAFull180()
     digForward()
     digForward()
-    turtle.turnLeft()
+    turtle.turnRight()
 --Row two dig, 3X3, starts botton right, ends top left, zig-zags
     end
 
