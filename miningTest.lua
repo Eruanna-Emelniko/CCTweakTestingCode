@@ -18,6 +18,7 @@ function didAFull180()
 end
 
 while turtle.getFuelLevel() > 500 do
+--this is the main digging code
     digForward()
     turtle.turnRight()
     digForward()
@@ -48,9 +49,15 @@ while turtle.getFuelLevel() > 500 do
     digForward()
     turtle.turnLeft()
 --Row two dig, 3X3, starts botton right, ends top left, zig-zags
-end
+    end
 
-if turtle.getFuelLevel() < 500 then
-    slot = turtle.getSelectedSlot()
-
+while turtle.getFuelLevel() < 500 do
+    
+    if turtle.getFuelLevel() < 500 then
+    i = 1
+    if (i < 17) then
+        if (turtle.getItemDetail(i) = ("minecraft:coal")) then
+            turtle.refuel()
+    else
+        i =  i + 1
 end
