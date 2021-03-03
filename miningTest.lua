@@ -56,7 +56,7 @@ while turtle.getFuelLevel() < 500 do
     if turtle.getFuelLevel() < 500 then
     i = 1
     if (i < 17) then
-        if (turtle.getItemDetail(i) = ("minecraft:coal")) then
+        if (turtle.getItemDetail(i) == ("minecraft:coal")) then
             turtle.refuel()
     else
         i =  i + 1
