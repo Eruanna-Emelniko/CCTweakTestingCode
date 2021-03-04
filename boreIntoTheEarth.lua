@@ -17,6 +17,8 @@ function didAFull180()
     
 end
 
+RMO = 1
+-- Var to track how far Turtle has borred into the earth
 while turtle.getFuelLevel() > 500 do
 --this is the main digging code
     digForward()
@@ -33,6 +35,8 @@ while turtle.getFuelLevel() > 500 do
     turtle.down()
     digForward()
     digForward()
+    RMO = RMO + 1
+    print(RMO)
 --Row one dig, 3X3, starts in top left, ends in botton right, zig-zags
     turtle.turnLeft()
     digForward()
@@ -48,21 +52,24 @@ while turtle.getFuelLevel() > 500 do
     digForward()
     digForward()
     turtle.turnRight()
+    RMO = RMO + 1
+    print(RMO)
 --Row two dig, 3X3, starts botton right, ends top left, zig-zags
     end
 
-while turtle.getFuelLevel() < 500 do
-    
-    if turtle.getFuelLevel() < 500 then
-    i = 1
-        if (i < 17) then
-            if (turtle.getItemDetail(i) == ("minecraft:coal")) then
+--while turtle.getFuelLevel() < 500 do
+--Should refuel when documents
+--Under work
+    --if turtle.getFuelLevel() < 500 then
+    --i = 1
+        --if (i < 17) then
+            --if (turtle.getItemDetail(i) == ("minecraft:coal")) then
 
-            turtle.refuel()
+            --turtle.refuel()
         
-            else
-            i =  i + 1
-            end
-        end
-    end
-end
+            --else
+            --i =  i + 1
+            --end
+        --end
+    --end
+--end
